@@ -2,7 +2,8 @@ import os
 
 import setuptools
 
-version = os.environ["MSPRIOR_VERSION"]
+# version = os.environ["MSPRIOR_VERSION"]
+version = "gh_local"
 
 with open("README.md", "r") as readme:
     readme = readme.read()
