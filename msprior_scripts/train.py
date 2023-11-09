@@ -46,6 +46,7 @@ flags.DEFINE_integer("val_every",
 
 
 def add_ext(config: str):
+    """Add .gin extension to config (str) if not present."""
     if config[-4:] != ".gin":
         config += ".gin"
     return config

@@ -101,7 +101,7 @@ class RAVEEncoder(msprior.preprocessor.Preprocessor):
         self.model = torch.jit.load(self.pretrained_path)
         self.model.to(self.device).eval()
 
-        self.temporal_ratio = self.model.encode_params[-1].item()
+        self.temporal_ratio = self.model.encode_params[-1].item() # 2048
         self.from_continuous = "Discrete" not in self.model.encoder.original_name
         self.resolution = FLAGS.resolution
 
